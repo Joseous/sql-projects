@@ -47,12 +47,36 @@ CREATE TABLE exam_results (
 
 ### INSERT
 I used the `INSERT` command to add records into the tables. For example, I inserted student details such as names, city, class, gender, and date of birth into the **students** table.
+```sql
+insert into students(student_id, first_name, last_name, gender,
+date_of_birth, class, city)
+values 
+(1, 'Amina', 'Wanjiku', 'F', '2008-03-12', 'Form 3', 'Nairobi'),
+(2, 'Brian', 'Ochieng', 'M', '2007-07-25', 'Form 4', 'Mombasa'),
+(3, 'Cynthia', 'Mutua', 'F', '2008-11-05', 'Form 3', 'Kisumu'),
+(4, 'David', 'Kamau', 'M', '2007-02-18', 'Form 4', 'Nairobi'),
+(5, 'Esther', 'Akinyi', 'F', '2009-06-30', 'Form 2', 'Nakuru'),
+(6, 'Felix', 'Otieno', 'M', '2009-09-14', 'Form 2', 'Eldoret'),
+(7, 'Grace', 'Mwangi', 'F', '2008-01-22', 'Form 3', 'Nairobi'),
+(8, 'Hassan', 'Abdi', 'M', '2007-04-09', 'Form 4', 'Mombasa'),
+(9, 'Ivy', 'Chebet', 'F', '2009-12-01', 'Form 2', 'Nakuru'),
+(10, 'James', 'Kariuki', 'M', '2008-08-17', 'Form 3', 'Nairobi');
+```
 
 ### UPDATE
 I used `UPDATE` to modify existing records. For example, updating `student_id = 5` city from *Nakuru* to *Nairobi*.
+```sql
+UPDATE students
+SET city = 'Nairobi'
+WHERE student_id = 5;
+```
 
 ### DELETE
 The `DELETE` statement was used to remove `result_id = 9`, which was cancelled, ensuring data accuracy and consistency.
+```sql
+DELETE FROM exam_results
+WHERE result_id = 9;
+```
 
 These commands helped simulate real-world database operations, where data is constantly being created, updated, and maintained.
 
