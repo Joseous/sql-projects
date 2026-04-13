@@ -64,8 +64,7 @@ WHERE result_id = 9;
 
 - `>` (greater than): used for numeric comparisons  
   Example:
-
-  ```sql
+```sql
 SELECT *
 FROM exam_results
 WHERE marks > 70;
