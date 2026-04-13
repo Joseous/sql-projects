@@ -64,7 +64,7 @@ WHERE result_id = 9;
 
 - `>` (greater than): used for numeric comparisons  
   Example:
-  
+
   ```sql
 SELECT *
 FROM exam_results
@@ -73,8 +73,8 @@ WHERE marks > 70;
 
 - `BETWEEN`: used to filter values within a range  
   Example:
-   
-  ```sql
+
+```sql
 SELECT *
 FROM exam_results
 WHERE exam_date BETWEEN '2024-03-15' AND '2024-03-18';
@@ -83,7 +83,7 @@ WHERE exam_date BETWEEN '2024-03-15' AND '2024-03-18';
 - `IN`: used to match multiple values  
   Example:
 
-  ```sql
+```sql
 SELECT *
 FROM students
 WHERE city IN ('Nairobi', 'Mombasa', 'Kisumu');
@@ -92,7 +92,7 @@ WHERE city IN ('Nairobi', 'Mombasa', 'Kisumu');
 - `LIKE`: used for pattern matching  
   Example:
   
-  ```sql
+```sql
 SELECT *
 FROM students
 WHERE first_name LIKE 'A%' OR first_name LIKE 'E%';
