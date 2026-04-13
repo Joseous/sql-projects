@@ -34,6 +34,16 @@ In the assignment, I applied several SQL commands to interact with the database.
 
 ### CREATE
 I used the `CREATE` statement to define tables such as **students**, **subjects**, and **exam_results**. This involved specifying column names, data types, and constraints like primary keys.
+```sql
+CREATE TABLE exam_results (
+    result_id INT PRIMARY KEY,
+    student_id INT,
+    subject_id INT,
+    marks INT,
+    exam_date DATE,
+    grade VARCHAR(2)
+);
+```
 
 ### INSERT
 I used the `INSERT` command to add records into the tables. For example, I inserted student details such as names, city, class, gender, and date of birth into the **students** table.
