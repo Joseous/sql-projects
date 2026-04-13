@@ -57,31 +57,40 @@ The `WHERE` clause is used to filter records based on specific conditions. It en
 - `=` (equals): used to match exact values  
   Example:  
   ```sql
-  WHERE result_id = 9;
+ delete from exam_results 
+where result_id = 9;
   ```
 
 - `>` (greater than): used for numeric comparisons  
   Example:  
   ```sql
-  WHERE marks > 70;
+  select *
+from exam_results
+where marks > 70;
   ```
 
 - `BETWEEN`: used to filter values within a range  
   Example:  
   ```sql
-  WHERE exam_date BETWEEN '2024-03-15' AND '2024-03-18';
+  select *
+from exam_results
+where exam_date between '2024-03-15' and '2024-03-18';
   ```
 
 - `IN`: used to match multiple values  
   Example:  
   ```sql
-  WHERE class IN ('Form 2', 'Form 4');
+ select *
+from students
+where city in ('Nairobi', 'Mombasa', 'Kisumu');
   ```
 
 - `LIKE`: used for pattern matching  
   Example:  
   ```sql
-  WHERE first_name LIKE 'A%' OR first_name LIKE 'E%';
+ select *
+from students
+where first_name like 'A%' or first_name like 'E%';
   ```
 
 Using the `WHERE` clause makes queries more efficient and meaningful by narrowing down results.
